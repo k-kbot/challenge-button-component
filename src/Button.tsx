@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled, { css } from "styled-components";
 
 type ButtonColor = "red" | "blue" | "green";
@@ -37,7 +37,7 @@ const Wrapper = styled.button<{ color: string; disabled: boolean }>`
 `
 
 export const Button = (props: {
-  children: string;
+  children: ReactNode;
   color: ButtonColor;
   size: ButtonSize;
   disabled: boolean;
